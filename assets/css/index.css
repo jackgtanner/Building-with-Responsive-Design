@@ -903,6 +903,9 @@ nav{
         height: 25%;
     }
 
+    .otherArticlesCatagory{
+        height: 90vh;
+    }
     
     .otherArticlesImg{
         height: 50%;
@@ -923,7 +926,7 @@ nav{
     }
  
     .otherArticlesCatagory{
-        height: 80vh;
+        height: 100vh;
     }
     
     .otherArticlesImg{
