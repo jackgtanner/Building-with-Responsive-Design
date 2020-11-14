@@ -218,7 +218,7 @@ nav{
 ---------------------------------------------------*/
 
 .topNews{
-    padding:7px 7px 16px 7px;
+    padding:7px 7px 16px 10px;
     height: 560px;
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -522,6 +522,7 @@ nav{
 
 
 .latestContainer{
+    font-family: Arial, Helvetica, sans-serif;
     margin-top: 10px;
     width: auto;
     height: auto;
@@ -556,11 +557,32 @@ nav{
 
 .latestTitle ul{
     list-style: none;
+    color: #ff4422;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 
 .latestTitle ul li{
+    cursor: default;
+    margin: 0 10px;
     display: inline;
+}
+
+.latestTitle ul li:hover{
+    cursor: pointer;
+    color: black;
+}
+
+.latestTitle ul li:nth-child(2):hover{
+    cursor: default;
+    color: #ff4422;
+
+}
+
+.latestTitle ul li:nth-child(4):hover{
+    cursor: default;
+    color: #ff4422;
 }
 
 
@@ -577,7 +599,87 @@ nav{
     width: 100%;
     max-width: 295px;
     height: 270px;
-    background-color: rgb(255, 68, 34);
+    background-color: rgb(255, 250, 248);
+}
+
+.funding img{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    margin: 10.5px;
+}
+
+.fundingTitle{
+    width: 100%;
+    background-color: #ff4422;
+    color: white;
+    font-size: 12px;
+    padding-left: 84px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 43px;
+}
+
+.fundingValue{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: rgba(255, 234, 232, 1);
+    padding-left: 84px;
+    font-size: 14px;
+    height: 60px;
+}
+
+.fundingValue h4{
+    font-size: 11px;
+    font-weight: 200;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.fundingInfo{
+    padding: 16px;
+    height: 82px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #555555;
+    border-bottom: 1px solid rgba(228, 70, 46, 0.398);
+}
+
+.fundingInfo div{
+    display: flex;
+}
+
+.fundingInfo h4{
+    margin-left: 10px;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+
+.fundingNews{
+    height: auto;
+    width: 100%;
+    padding: 16px;
+    font-size: 12px;
+    color: #555555;
+    line-height: 20px;
+}
+
+.fundingNews h4{
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.fundingNews h5{
+    font-size: 11px;
+    font-weight: 300;
+    color: #aaaaaa;
 }
 
 
@@ -590,6 +692,7 @@ nav{
 
     .latestTitle ul{
         margin: 5px 0 0 0;
+        flex-direction: row;
     }
 
     .latestTitle ul li:nth-child(2){
