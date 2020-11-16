@@ -1068,6 +1068,11 @@ nav{
         height: 75px;
         width: 75px;
     }
+    
+    .dealImage img {
+    width: 75px;
+    height: 75px;
+    }
 
     .offer{
         display: none;
